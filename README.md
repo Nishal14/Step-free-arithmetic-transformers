@@ -1,4 +1,3 @@
-
 # Step-Free Arithmetic Transformers
 
 **Mechanistic interpretability study of how transformers learn arithmetic reasoning under final-answer-only supervision.**
@@ -141,14 +140,12 @@ MIT License - See LICENSE file for details.
 ```bibtex
 @software{step_free_arithmetic_2025,
   title={Step-Free Arithmetic Transformers: Mechanistic Analysis of Final-Answer-Only Learning},
-  author={{Author Name}},
-  year={2025},
-  url={REPOSITORY_URL}
+  author={Nishal Thomas},
+  year={2026},
+  url={https://github.com/Nishal14/Step-free-arithmetic-transformers}
 }
 ```
 
 ## Contact
 
 For questions or issues, please open an issue on GitHub.
-=======
-
