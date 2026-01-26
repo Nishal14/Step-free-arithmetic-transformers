@@ -1,0 +1,302 @@
+{
+  "layer_0": {
+    "head_0": {
+      "mean_entropy": 1.4166488647460938,
+      "max_attention": 1.0,
+      "mean_attention_to_prev": 0.2274811565876007,
+      "diagonal_attention": 0.3026726245880127
+    },
+    "head_1": {
+      "mean_entropy": 1.3881449699401855,
+      "max_attention": 1.0,
+      "mean_attention_to_prev": 0.2512030601501465,
+      "diagonal_attention": 0.3047122359275818
+    },
+    "head_2": {
+      "mean_entropy": 1.4066680669784546,
+      "max_attention": 1.0,
+      "mean_attention_to_prev": 0.21099229156970978,
+      "diagonal_attention": 0.3132854700088501
+    },
+    "head_3": {
+      "mean_entropy": 1.3516496419906616,
+      "max_attention": 1.0,
+      "mean_attention_to_prev": 0.23458580672740936,
+      "diagonal_attention": 0.3067452311515808
+    },
+    "head_4": {
+      "mean_entropy": 1.3936501741409302,
+      "max_attention": 1.0,
+      "mean_attention_to_prev": 0.2253977209329605,
+      "diagonal_attention": 0.3154796063899994
+    },
+    "head_5": {
+      "mean_entropy": 1.4070963859558105,
+      "max_attention": 1.0,
+      "mean_attention_to_prev": 0.20905998349189758,
+      "diagonal_attention": 0.3468971848487854
+    },
+    "head_6": {
+      "mean_entropy": 1.407532811164856,
+      "max_attention": 1.0,
+      "mean_attention_to_prev": 0.22584575414657593,
+      "diagonal_attention": 0.33887022733688354
+    },
+    "head_7": {
+      "mean_entropy": 1.4070229530334473,
+      "max_attention": 1.0,
+      "mean_attention_to_prev": 0.23305915296077728,
+      "diagonal_attention": 0.3155063986778259
+    }
+  },
+  "layer_1": {
+    "head_0": {
+      "mean_entropy": 1.4084879159927368,
+      "max_attention": 1.0,
+      "mean_attention_to_prev": 0.2564717233181,
+      "diagonal_attention": 0.3199937045574188
+    },
+    "head_1": {
+      "mean_entropy": 1.4066215753555298,
+      "max_attention": 1.0,
+      "mean_attention_to_prev": 0.24454212188720703,
+      "diagonal_attention": 0.3391937017440796
+    },
+    "head_2": {
+      "mean_entropy": 1.4173983335494995,
+      "max_attention": 1.0,
+      "mean_attention_to_prev": 0.22766411304473877,
+      "diagonal_attention": 0.3004530668258667
+    },
+    "head_3": {
+      "mean_entropy": 1.3733270168304443,
+      "max_attention": 1.0,
+      "mean_attention_to_prev": 0.24763907492160797,
+      "diagonal_attention": 0.3579517900943756
+    },
+    "head_4": {
+      "mean_entropy": 1.3747206926345825,
+      "max_attention": 1.0,
+      "mean_attention_to_prev": 0.2782983183860779,
+      "diagonal_attention": 0.3167155981063843
+    },
+    "head_5": {
+      "mean_entropy": 1.4175218343734741,
+      "max_attention": 1.0,
+      "mean_attention_to_prev": 0.24056124687194824,
+      "diagonal_attention": 0.3223927319049835
+    },
+    "head_6": {
+      "mean_entropy": 1.4021375179290771,
+      "max_attention": 1.0,
+      "mean_attention_to_prev": 0.2615562677383423,
+      "diagonal_attention": 0.3315894305706024
+    },
+    "head_7": {
+      "mean_entropy": 1.413191318511963,
+      "max_attention": 1.0,
+      "mean_attention_to_prev": 0.24962083995342255,
+      "diagonal_attention": 0.3237033188343048
+    }
+  },
+  "layer_2": {
+    "head_0": {
+      "mean_entropy": 1.3938463926315308,
+      "max_attention": 1.0,
+      "mean_attention_to_prev": 0.2271140217781067,
+      "diagonal_attention": 0.3476230502128601
+    },
+    "head_1": {
+      "mean_entropy": 1.4125148057937622,
+      "max_attention": 1.0,
+      "mean_attention_to_prev": 0.2365555614233017,
+      "diagonal_attention": 0.3353003263473511
+    },
+    "head_2": {
+      "mean_entropy": 1.4087315797805786,
+      "max_attention": 1.0,
+      "mean_attention_to_prev": 0.2508832514286041,
+      "diagonal_attention": 0.32859012484550476
+    },
+    "head_3": {
+      "mean_entropy": 1.4159281253814697,
+      "max_attention": 1.0,
+      "mean_attention_to_prev": 0.22921046614646912,
+      "diagonal_attention": 0.3322017788887024
+    },
+    "head_4": {
+      "mean_entropy": 1.3086167573928833,
+      "max_attention": 1.0,
+      "mean_attention_to_prev": 0.2592496871948242,
+      "diagonal_attention": 0.3648182153701782
+    },
+    "head_5": {
+      "mean_entropy": 1.3893495798110962,
+      "max_attention": 1.0,
+      "mean_attention_to_prev": 0.2594414949417114,
+      "diagonal_attention": 0.34078919887542725
+    },
+    "head_6": {
+      "mean_entropy": 1.388535499572754,
+      "max_attention": 1.0,
+      "mean_attention_to_prev": 0.23895487189292908,
+      "diagonal_attention": 0.3597698211669922
+    },
+    "head_7": {
+      "mean_entropy": 1.412642240524292,
+      "max_attention": 1.0,
+      "mean_attention_to_prev": 0.2561676502227783,
+      "diagonal_attention": 0.3176610469818115
+    }
+  },
+  "layer_3": {
+    "head_0": {
+      "mean_entropy": 1.41441810131073,
+      "max_attention": 1.0,
+      "mean_attention_to_prev": 0.22864845395088196,
+      "diagonal_attention": 0.3062504529953003
+    },
+    "head_1": {
+      "mean_entropy": 1.3959952592849731,
+      "max_attention": 1.0,
+      "mean_attention_to_prev": 0.25829917192459106,
+      "diagonal_attention": 0.30925989151000977
+    },
+    "head_2": {
+      "mean_entropy": 1.3937005996704102,
+      "max_attention": 1.0,
+      "mean_attention_to_prev": 0.2623503506183624,
+      "diagonal_attention": 0.3341693878173828
+    },
+    "head_3": {
+      "mean_entropy": 1.394461750984192,
+      "max_attention": 1.0,
+      "mean_attention_to_prev": 0.25897160172462463,
+      "diagonal_attention": 0.32875508069992065
+    },
+    "head_4": {
+      "mean_entropy": 1.4022634029388428,
+      "max_attention": 1.0,
+      "mean_attention_to_prev": 0.2319657802581787,
+      "diagonal_attention": 0.31516847014427185
+    },
+    "head_5": {
+      "mean_entropy": 1.408191442489624,
+      "max_attention": 1.0,
+      "mean_attention_to_prev": 0.24072985351085663,
+      "diagonal_attention": 0.33894193172454834
+    },
+    "head_6": {
+      "mean_entropy": 1.4160598516464233,
+      "max_attention": 1.0,
+      "mean_attention_to_prev": 0.24491706490516663,
+      "diagonal_attention": 0.2954269051551819
+    },
+    "head_7": {
+      "mean_entropy": 1.4145580530166626,
+      "max_attention": 1.0,
+      "mean_attention_to_prev": 0.2412700355052948,
+      "diagonal_attention": 0.2958109378814697
+    }
+  },
+  "layer_4": {
+    "head_0": {
+      "mean_entropy": 1.4107285737991333,
+      "max_attention": 1.0,
+      "mean_attention_to_prev": 0.23668889701366425,
+      "diagonal_attention": 0.29366427659988403
+    },
+    "head_1": {
+      "mean_entropy": 1.3930710554122925,
+      "max_attention": 1.0,
+      "mean_attention_to_prev": 0.25270405411720276,
+      "diagonal_attention": 0.3194727599620819
+    },
+    "head_2": {
+      "mean_entropy": 1.4037880897521973,
+      "max_attention": 1.0,
+      "mean_attention_to_prev": 0.2443418651819229,
+      "diagonal_attention": 0.2909415662288666
+    },
+    "head_3": {
+      "mean_entropy": 1.4056744575500488,
+      "max_attention": 1.0,
+      "mean_attention_to_prev": 0.23026129603385925,
+      "diagonal_attention": 0.30477893352508545
+    },
+    "head_4": {
+      "mean_entropy": 1.4025644063949585,
+      "max_attention": 1.0,
+      "mean_attention_to_prev": 0.24778935313224792,
+      "diagonal_attention": 0.30970248579978943
+    },
+    "head_5": {
+      "mean_entropy": 1.3868094682693481,
+      "max_attention": 1.0,
+      "mean_attention_to_prev": 0.21853768825531006,
+      "diagonal_attention": 0.36688950657844543
+    },
+    "head_6": {
+      "mean_entropy": 1.4060077667236328,
+      "max_attention": 1.0,
+      "mean_attention_to_prev": 0.22359521687030792,
+      "diagonal_attention": 0.3405154347419739
+    },
+    "head_7": {
+      "mean_entropy": 1.3920245170593262,
+      "max_attention": 1.0,
+      "mean_attention_to_prev": 0.22793567180633545,
+      "diagonal_attention": 0.36883610486984253
+    }
+  },
+  "layer_5": {
+    "head_0": {
+      "mean_entropy": 1.3770970106124878,
+      "max_attention": 1.0,
+      "mean_attention_to_prev": 0.2289900779724121,
+      "diagonal_attention": 0.3485199213027954
+    },
+    "head_1": {
+      "mean_entropy": 1.4102590084075928,
+      "max_attention": 1.0,
+      "mean_attention_to_prev": 0.22886329889297485,
+      "diagonal_attention": 0.3382408916950226
+    },
+    "head_2": {
+      "mean_entropy": 1.4102773666381836,
+      "max_attention": 1.0,
+      "mean_attention_to_prev": 0.2254510372877121,
+      "diagonal_attention": 0.32850226759910583
+    },
+    "head_3": {
+      "mean_entropy": 1.4153157472610474,
+      "max_attention": 1.0,
+      "mean_attention_to_prev": 0.2329818606376648,
+      "diagonal_attention": 0.33160513639450073
+    },
+    "head_4": {
+      "mean_entropy": 1.4171769618988037,
+      "max_attention": 1.0,
+      "mean_attention_to_prev": 0.22947286069393158,
+      "diagonal_attention": 0.32713082432746887
+    },
+    "head_5": {
+      "mean_entropy": 1.410570740699768,
+      "max_attention": 1.0,
+      "mean_attention_to_prev": 0.2257065773010254,
+      "diagonal_attention": 0.30557191371917725
+    },
+    "head_6": {
+      "mean_entropy": 1.3664941787719727,
+      "max_attention": 1.0,
+      "mean_attention_to_prev": 0.24509552121162415,
+      "diagonal_attention": 0.31358179450035095
+    },
+    "head_7": {
+      "mean_entropy": 1.4090895652770996,
+      "max_attention": 1.0,
+      "mean_attention_to_prev": 0.22126808762550354,
+      "diagonal_attention": 0.34415361285209656
+    }
+  }
+}

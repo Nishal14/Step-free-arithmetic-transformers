@@ -1,0 +1,35 @@
+model:
+  name: scale-10m-arithmetic
+  vocab_size: 35
+
+  d_model: 384
+  num_layers: 6
+  num_heads: 6
+  d_ff: 1536
+
+  max_seq_len: 32
+  dropout: 0.1
+
+  use_rope: true
+  tie_weights: true
+
+data:
+  train_path: data/pilot_train.jsonl
+  val_path: data/pilot_val.jsonl
+  max_seq_len: 32
+  use_steps: false
+
+training:
+  batch_size: 8
+  num_epochs: 50
+  eval_interval: 2
+  save_interval: 5
+
+  optimizer:
+    lr: 0.0001
+    weight_decay: 0.01
+    warmup_steps: 500
+
+logging:
+  log_interval: 50
+  use_wandb: false

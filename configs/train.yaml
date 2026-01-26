@@ -1,0 +1,47 @@
+# Training configuration for compact transformer
+
+model:
+  name: "compact-transformer"
+  d_model: 256                # Model dimension (embedding size)
+  num_layers: 6               # Number of transformer layers
+  num_heads: 8                # Number of attention heads
+  d_ff: 1024                  # Feed-forward dimension
+  max_seq_len: 512            # Maximum sequence length
+  dropout: 0.1                # Dropout rate
+  use_rope: true              # Use Rotary Position Embeddings
+  tie_weights: true           # Tie input/output embeddings
+
+data:
+  train_path: "data/add/train.jsonl"      # Path to training data
+  val_path: "data/add/dev.jsonl"          # Path to validation data
+  test_path: "data/add/test.jsonl"        # Path to test data
+  max_seq_len: 512                        # Maximum sequence length
+  use_steps: false                        # Include stepwise reasoning traces
+
+training:
+  num_epochs: 20                          # Number of training epochs
+  batch_size: 32                          # Batch size
+  eval_interval: 1                        # Evaluate every N epochs
+  save_interval: 5                        # Save checkpoint every N epochs
+
+  optimizer:
+    lr: 0.0001                            # Learning rate (1e-4)
+    weight_decay: 0.01                    # Weight decay for AdamW
+    warmup_steps: 500                     # Number of warmup steps
+    betas: [0.9, 0.95]                    # Adam beta parameters
+
+logging:
+  use_wandb: false                        # Enable Weights & Biases logging
+  wandb_project: "math-compact"           # W&B project name
+  log_interval: 100                       # Log every N steps
+
+# Optional: Advanced settings
+# distillation:
+#   use_distillation: false
+#   teacher_checkpoint: null
+#   temperature: 2.0
+#   alpha: 0.5
+
+# aux_losses:
+#   use_aux_loss: false
+#   aux_weight: 0.1

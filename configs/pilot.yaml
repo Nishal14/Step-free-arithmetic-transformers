@@ -1,0 +1,45 @@
+# Training configuration for pilot arithmetic dataset
+# Small-scale experiments for mechanistic interpretability
+
+model:
+  name: "pilot-arithmetic"
+  d_model: 128                # Smaller for pilot experiments
+  num_layers: 4               # 4 layers for depth-2 expressions
+  num_heads: 4                # 4 heads for ablation experiments
+  d_ff: 384                   # FFN dimension (3x model dim)
+  max_seq_len: 32             # Max expression length ~17 chars
+  dropout: 0.1                # Standard dropout
+  use_rope: true              # Use Rotary Position Embeddings
+  tie_weights: true           # Tie input/output embeddings
+  ffn_type: "gelu"            # Standard GELU activation
+
+data:
+  train_path: "data/pilot_train.jsonl"
+  val_path: "data/pilot_val.jsonl"
+  test_path: "data/pilot_test_flat.jsonl"  # Use flat for main testing
+  max_seq_len: 32
+  use_steps: false            # Final answer only (no reasoning traces)
+  step_masking_mode: "none"   # Not used since use_steps=false
+
+training:
+  num_epochs: 50              # More epochs for small dataset
+  batch_size: 32              # Fits in memory easily
+  eval_interval: 5            # Evaluate every 5 epochs
+  save_interval: 10           # Save every 10 epochs
+
+  optimizer:
+    lr: 0.0003                # Slightly higher for small dataset
+    weight_decay: 0.01        # Standard weight decay
+    warmup_steps: 100         # 100 steps warmup
+    betas: [0.9, 0.95]        # Adam beta parameters
+
+logging:
+  use_wandb: false            # Disable for pilot experiments
+  wandb_project: "math-compact-pilot"
+  log_interval: 25            # Log every 25 steps
+
+# Notes:
+# - This config is optimized for RTX 3050 (4GB VRAM)
+# - Total parameters: ~0.8M (very small for fast iteration)
+# - Training time: ~5-10 minutes on GPU
+# - Use for ablation experiments, not final results

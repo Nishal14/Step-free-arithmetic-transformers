@@ -1,0 +1,63 @@
+# =========================
+# Python runtime artifacts
+# =========================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*$py.class
+.Python
+
+# =========================
+# Packaging artifacts
+# =========================
+*.egg-info/
+dist/
+build/
+
+# =========================
+# Virtual environments
+# =========================
+.venv/
+venv/
+ENV/
+
+# =========================
+# ML training artifacts
+# =========================
+runs/
+metrics/
+*.pt
+*.pth
+
+# =========================
+# Generated datasets
+# =========================
+data/*.jsonl
+
+# =========================
+# Editor / IDE state
+# =========================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# =========================
+# OS-specific files
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# Logs & temporary files
+# =========================
+*.log
+*.tmp
+*.bak
+
+# =========================
+# AI / tool metadata
+# =========================
+.claude/

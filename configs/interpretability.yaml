@@ -1,0 +1,155 @@
+# Interpretability Analysis Configuration
+
+# Model checkpoint to analyze
+checkpoint_path: "runs/seed42/checkpoint_best.pt"
+
+# Device configuration
+device: "cpu"  # or "cuda"
+
+# Output directory for analysis results
+output_dir: "reports/interpretability"
+
+# Examples to analyze
+examples:
+  addition:
+    - "12 + 34"
+    - "59 + 73"  # Has carry
+    - "100 + 200"
+    - "456 + 789"
+  multiplication:
+    - "12 * 34"
+    - "56 * 78"
+  base_convert:
+    - "100 to binary"
+    - "255 to hex"
+
+# Attention analysis settings
+attention:
+  enabled: true
+  layers_to_analyze: [0, 2, 4]  # Which layers to visualize
+  heads_to_highlight: []  # Specific heads to analyze in detail
+  find_specialized_heads: true
+  attention_threshold: 0.3  # Minimum attention weight to consider significant
+
+# Activation patching settings
+patching:
+  enabled: true
+  corruption_types:
+    - "digit_flip"  # Change one digit
+    - "operator_change"  # Change operator
+  layers_to_patch: null  # null = all layers
+  position_patching: true  # Test position-specific patching
+
+# Logit lens settings
+logit_lens:
+  enabled: true
+  apply_layer_norm: true
+  top_k_predictions: 5
+  track_convergence: true
+  positions_to_analyze: [-1, -2, -3]  # Last three positions
+
+# Circuit discovery settings
+circuits:
+  enabled: true
+  operations_to_analyze:
+    - "carry_detection"
+    - "operator_attention"
+    - "position_tracking"
+    - "digit_recognition"
+
+  # Carry detection specific
+  carry_detection:
+    examples_with_carry:
+      - text: "59 + 73"
+        carry_positions: [0, 1]
+      - text: "888 + 999"
+        carry_positions: [0, 1, 2]
+    threshold: 0.3
+
+  # Neuron analysis
+  neuron_analysis:
+    layers: ["ff_0", "ff_2", "ff_4"]
+    top_k: 20
+    activation_threshold: 0.1
+
+# Probing classifier settings
+probing:
+  enabled: true
+  probes:
+    - name: "carry_detection"
+      type: "binary"
+      description: "Detect if carry occurs at position"
+
+    - name: "digit_value"
+      type: "multiclass"
+      description: "Predict digit value (0-9)"
+
+    - name: "operation_type"
+      type: "multiclass"
+      description: "Classify operation type"
+      classes: ["add", "mul", "base_convert", "poly_expand"]
+
+  train_test_split: 0.8
+  max_iterations: 1000
+  probe_all_layers: true
+
+# Intervention experiments settings
+interventions:
+  enabled: true
+
+  # Head ablation
+  head_ablation:
+    enabled: false  # Expensive, set to true for full analysis
+    ablation_types: ["zero", "mean"]
+    measure_all_heads: false
+    specific_heads: []  # Empty = measure all
+
+  # Layer ablation
+  layer_ablation:
+    enabled: true
+    components: ["attn", "ff", "full"]
+    ablation_types: ["zero", "identity"]
+
+  # Cumulative ablation
+  cumulative_ablation:
+    enabled: false
+    max_ablations: 10
+    strategy: "importance_order"  # or "random"
+
+# Visualization settings
+visualization:
+  dpi: 300
+  figure_format: "png"
+  color_scheme: "viridis"
+  save_all_figures: true
+
+  # Attention heatmap settings
+  attention_heatmap:
+    show_annotations: true
+    annotation_threshold: 0.1
+
+  # Logit lens settings
+  logit_lens_viz:
+    show_top_k: 3
+    highlight_correct: true
+
+# Dataset for batch analysis
+batch_analysis:
+  enabled: false
+  dataset_path: "data/add/test.jsonl"
+  max_examples: 100
+  sample_strategy: "random"  # or "stratified"
+
+# Export settings
+export:
+  save_activations: false
+  save_attention_maps: true
+  save_circuit_graphs: true
+  export_format: "json"  # or "npz" for numerical data
+
+# Advanced settings
+advanced:
+  cache_activations: true
+  parallel_processing: false
+  verbose: true
+  random_seed: 42
