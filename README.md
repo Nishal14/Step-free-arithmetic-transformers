@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Step-Free Arithmetic Transformers
 
 **Mechanistic interpretability study of how transformers learn arithmetic reasoning under final-answer-only supervision.**
@@ -151,6 +151,4 @@ MIT License - See LICENSE file for details.
 
 For questions or issues, please open an issue on GitHub.
 =======
-# Step-free-arithmetic-transformers
-Mechanistic analysis of how transformer models learn parenthesis-sensitive arithmetic using final-answer-only supervision.
->>>>>>> 269921fc88f5159b42baf43c0496f1bd530a685b
+
