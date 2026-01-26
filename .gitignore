@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # =========================
 # Python runtime artifacts
 # =========================
@@ -270,4 +270,4 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
->>>>>>> 269921fc88f5159b42baf43c0496f1bd530a685b
+
