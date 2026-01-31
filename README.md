@@ -138,7 +138,7 @@ MIT License - See LICENSE file for details.
 ## Citation
 
 ```bibtex
-@software{step_free_arithmetic_2025,
+@software{step_free_arithmetic_2026,
   title={Step-Free Arithmetic Transformers: Mechanistic Analysis of Final-Answer-Only Learning},
   author={Nishal Thomas},
   year={2026},
