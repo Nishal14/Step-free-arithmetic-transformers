@@ -8,6 +8,17 @@ This repository contains the code and experimental setup for investigating how c
 
 The project isolates whether algorithmic structure and internal representations can emerge in transformers without explicit step-by-step supervision. We study attention head specialization, internal feature encoding, and generalization to out-of-distribution expression depths.
 
+## Companion Blog (Beginner-Friendly)
+
+I also wrote a beginner-friendly blog explaining the ideas behind this project,
+what mechanistic interpretability is, and what I learned while building it:
+
+👉 **Intro to Mechanistic Interpretability (As a Beginner)**  
+[https://nishal14.substack.com/p/intro-to-mechanistic-interpretability]
+
+The blog is written for readers with little or no prior background in
+mechanistic interpretability and focuses on intuition rather than code.
+
 ## Experiments
 
 This repository implements three core experimental analyses:
